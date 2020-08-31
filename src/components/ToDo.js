@@ -1,10 +1,11 @@
 import React from "react";
 
 function ToDo() {
+  const itemName = "Item";
   return (
     <div>
       <input type="checkbox" />
-      <p>Item</p>
+      <p>{itemName}</p>
     </div>
   );
 }
