@@ -1,11 +1,10 @@
 import React from "react";
+import TodoItem from "./TodoItem";
 
 function ToDo() {
-  const itemName = "Item";
   return (
-    <div>
-      <input type="checkbox" />
-      <p>{itemName}</p>
+    <div className="todo-list">
+      <TodoItem />
     </div>
   );
 }

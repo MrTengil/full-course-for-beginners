@@ -47,3 +47,31 @@
   color: #fff;
   padding: 5% 0px 0px 0px;
 }
+
+.todo-list {
+  background-color: white;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #efefef;
+  padding: 30px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 20px 0;
+  width: 70%;
+  border-bottom: 1px solid #cecece;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #333333;
+}
+
+.Main-Content {
+  /* height: 92.5%; */
+  padding: 0 0 25%;
+}
