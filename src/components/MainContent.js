@@ -9,8 +9,9 @@ function MainContent() {
       {cats.map((item) => (
         <ContactCard {...item} />
       ))}
-
-      <Joke {...jokes[0]} />
+      {jokes.map((item) => (
+        <Joke {...item} />
+      ))}
     </div>
   );
 }
