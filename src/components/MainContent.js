@@ -6,9 +6,9 @@ import Joke from "./Joke";
 function MainContent() {
   return (
     <div className="Main-Content">
-      {/* {cats.map((item) => (
+      {cats.map((item) => (
         <ContactCard {...item} />
-      ))} */}
+      ))}
 
       <Joke {...jokes[0]} />
     </div>
