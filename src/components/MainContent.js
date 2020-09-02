@@ -60,7 +60,7 @@ var cats = [
     name: "Louise Jacobsson",
     imgUrl:
       "https://scontent.farn2-1.fna.fbcdn.net/v/t1.0-9/37121517_1784116471666338_8430916760760221696_n.jpg?_nc_cat=108&_nc_sid=85a577&_nc_ohc=qAguYYNdQLYAX_a36ze&_nc_ht=scontent.farn2-1.fna&oh=724136d8a1d5b127fd40ef9ac6d32aec&oe=5F7432B6",
-    phone: "+46 69 69 69",
+    phone: "+46 123456789",
     email: "blondTaby@hotmail.com",
   },
 ];
