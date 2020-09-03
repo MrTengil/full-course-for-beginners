@@ -5,11 +5,16 @@ import Joke from "./Joke";
 import jokesData from "./JSON/jokesData";
 import contactsData from "./JSON/contactsData";
 import vschoolProducts from "./JSON/vschoolProducts";
+import todosData from "./JSON/todosData";
 import Product from "./Product";
+import TodoItem from "./TodoItem";
 
 function MainContent() {
   return (
     <div className="Main-Content">
+      {todosData.map((item) => (
+        <TodoItem {...item} key={item.id} />
+      ))}
       {contactsData.map((item) => (
         <ContactCard {...item} key={item.id} />
       ))}
