@@ -2,10 +2,10 @@ import React from "react";
 // import ToDo from "./ToDo.js";
 import ContactCard from "./ContactCard";
 import Joke from "./Joke";
-import jokesData from "./JSON/jokesData";
-import contactsData from "./JSON/contactsData";
-import vschoolProducts from "./JSON/vschoolProducts";
-import todosData from "./JSON/todosData";
+import jokesData from "../data/jokesData";
+import contactsData from "../datacontactsData";
+import vschoolProducts from "../data/vschoolProducts";
+import todosData from "../data/todosData";
 import Product from "./Product";
 import TodoItem from "./TodoItem";
 

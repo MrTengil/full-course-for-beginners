@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import TodoItem from "./components/TodoItem";
-import todosData from "./components/JSON/todosData";
+import todosData from "./data/todosData";
 import "./style.css";
 
 class App extends React.Component {
@@ -11,6 +11,7 @@ class App extends React.Component {
     super();
     this.state = {
       todos: todosData,
+      // todonts: todontsData,
       // count: 0,
     };
     // this.add = this.add.bind(this);
@@ -27,18 +28,17 @@ class App extends React.Component {
   //   });
   // }
 
-  handleChange(id) {
+  handleChange(id, newState) {
     this.setState((prevState) => {
+      const updatedTodos = prevState.todos.map((todo) => {
+        if (todo.id === id) {
+          todo.completed = newState;
+          // todo.completed = !todo.completed;
+        }
+        return todo;
+      });
       return {
-        todos: prevState.todos.map((todo) => {
-          if (todo.id === id) {
-            console.log("före:", todo.completed);
-            todo.completed = !todo.completed;
-            console.log("efter:", todo.completed);
-          }
-          console.log("boj");
-          return todo;
-        }),
+        todos: updatedTodos,
       };
     });
   }
