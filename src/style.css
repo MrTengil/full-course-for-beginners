@@ -48,6 +48,23 @@
   color: #fff;
   padding: 5% 0px 0px 0px;
 }
+.footerBottom {
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 1%;
+  text-align: center;
+  background-color: #282c34;
+  color: #cecece;
+  padding: 0px 0px 0px 0px; 
+  display: flex;
+  justify-content: space-around;
+}
+
+.clickable{
+  cursor: pointer;
+  /* border: 1px solid grey; */
+}
 
 .todo-list {
   background-color: white;

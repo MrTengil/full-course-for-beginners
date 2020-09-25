@@ -1,9 +1,18 @@
 import React from "react";
+import BottomFooterItem from "./BottomFooterItem";
+import bottomItemData from "../data/bottomItemData";
 
 function Footer() {
+  // const hello = ["Contact", "Career", "About us", "Cat pictures"]
   return (
-    <div className="footer">
-      <footer>ContactBook v0.0.1</footer>
+    <div>
+      <div className="footer">tengberg</div>
+      <div className="footerBottom">
+        {bottomItemData.map((item) => (
+        <BottomFooterItem {...item} key={item.id} />
+      ))}
+      </div>
+      
     </div>
   );
 }
